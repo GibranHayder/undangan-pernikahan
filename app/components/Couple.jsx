@@ -165,7 +165,7 @@ export default function Couple() {
             <h3
               className={`${greatVibes.className} mt-3 text-[clamp(3.6rem,13vw,6rem)] font-normal leading-[0.95] text-[#111111]`}
             >
-              RifaldI Hamid
+              Rifaldi Hamid
             </h3>
 
             {/* NAMA PANGGILAN */}
