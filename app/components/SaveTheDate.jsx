@@ -64,10 +64,10 @@ export default function SaveTheDate() {
 
   const saveToCalendar = () => {
     /*
-      03 October 2026 - 20:30 WIT
+      03 October 2026 - 20:00 WIT
       WIT = UTC + 9
 
-      20:30 WIT = 11:30 UTC
+      20:00 WIT = 11:00 UTC
     */
 
     const calendarContent = [
