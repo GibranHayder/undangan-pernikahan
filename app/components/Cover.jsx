@@ -23,7 +23,7 @@ export default function Cover({ guestName = "Tamu Undangan", onOpen }) {
       <div
         className="absolute inset-0 scale-[1.01] bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: 'url("/images/12.jpeg")',
+          backgroundImage: 'url("/images/11.png")',
         }}
       />
 
