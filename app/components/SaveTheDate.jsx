@@ -75,7 +75,7 @@ export default function SaveTheDate() {
 
       "VERSION:2.0",
 
-      "PRODID:-//Aldi & Uli Wedding//ID",
+      "PRODID:-//Aldhy & Ully Wedding//ID",
 
       "CALSCALE:GREGORIAN",
 
@@ -83,16 +83,16 @@ export default function SaveTheDate() {
 
       "BEGIN:VEVENT",
 
-      "UID:aldi-uli-wedding-20261003@wedding",
+      "UID:aldhy-ully-wedding-20261003@wedding",
 
       "DTSTAMP:20260915T000000Z",
 
       // 03 October 2026 - 20:00 WIT
       "DTSTART:20261003T110000Z",
 
-      "SUMMARY:The Wedding of Aldi & Uli",
+      "SUMMARY:The Wedding of Aldhy & Ully",
 
-      "DESCRIPTION:Undangan Pernikahan Aldi & Uli. Acara akan dilaksanakan pada Sabtu, 03 Oktober 2026 pukul 20.00 WIT.",
+      "DESCRIPTION:Undangan Pernikahan Aldhy & Ully. Acara akan dilaksanakan pada Sabtu, 03 Oktober 2026 pukul 20.00 WIT.",
 
       "LOCATION:Kelurahan Bastiong Karance\\, Kecamatan Ternate Selatan\\, Kota Ternate\\, Maluku Utara",
 
@@ -102,7 +102,7 @@ export default function SaveTheDate() {
 
       "ACTION:DISPLAY",
 
-      "DESCRIPTION:Besok adalah hari pernikahan Aldi & Uli ♡",
+      "DESCRIPTION:Besok adalah hari pernikahan Aldhy & Ully ♡",
 
       "END:VALARM",
 
@@ -121,7 +121,7 @@ export default function SaveTheDate() {
 
     link.href = url;
 
-    link.download = "Wedding-Aldi-Uli-03-Oktober-2026.ics";
+    link.download = "Wedding-Aldhy-Ully-03-Oktober-2026.ics";
 
     document.body.appendChild(link);
 
@@ -143,10 +143,10 @@ export default function SaveTheDate() {
   // =====================================================
 
   const openGoogleCalendar = () => {
-    const title = encodeURIComponent("The Wedding of Aldi & Uli");
+    const title = encodeURIComponent("The Wedding of Aldhy & Ully");
 
     const details = encodeURIComponent(
-      "Undangan Pernikahan Aldi & Uli. Sabtu, 03 Oktober 2026 pukul 20.00 WIT ♡",
+      "Undangan Pernikahan Aldhy & Ully. Sabtu, 03 Oktober 2026 pukul 20.00 WIT ♡",
     );
 
     const location = encodeURIComponent(
@@ -345,7 +345,7 @@ export default function SaveTheDate() {
         </h2>
 
         <p className="mt-4 font-serif text-lg italic text-neutral-300 sm:text-2xl">
-          Aldi & Uli
+          Aldhy & Ully
         </p>
 
         {/* ================================================= */}
