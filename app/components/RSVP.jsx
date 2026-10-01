@@ -150,11 +150,13 @@ export default function RSVP({ guestName = "" }) {
       className="relative overflow-hidden bg-gradient-to-b from-white via-[#f7f7f7] to-[#eeeeee] px-5 py-24 sm:px-8 sm:py-28"
     >
       {/* Background glow */}
+
       <div className="pointer-events-none absolute -left-24 top-20 h-72 w-72 rounded-full bg-neutral-300/30 blur-[100px]" />
 
       <div className="pointer-events-none absolute -right-24 bottom-20 h-80 w-80 rounded-full bg-neutral-400/20 blur-[110px]" />
 
       {/* Left ornament */}
+
       <svg
         viewBox="0 0 260 420"
         className="pointer-events-none absolute -left-20 top-20 w-[180px] opacity-30 sm:w-[230px]"
@@ -193,6 +195,7 @@ export default function RSVP({ guestName = "" }) {
       </svg>
 
       {/* Right ornament */}
+
       <svg
         viewBox="0 0 260 420"
         className="pointer-events-none absolute -bottom-20 -right-20 w-[180px] rotate-180 opacity-30 sm:w-[230px]"
@@ -232,6 +235,7 @@ export default function RSVP({ guestName = "" }) {
 
       <div className="relative z-10 mx-auto max-w-6xl">
         {/* HEADER */}
+
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-[10px] font-medium uppercase tracking-[0.42em] text-[#525252] sm:text-xs">
             Doa & Ucapan
@@ -255,13 +259,15 @@ export default function RSVP({ guestName = "" }) {
 
           <p className="mx-auto mt-6 max-w-xl text-sm leading-7 text-[#404040] sm:text-base sm:leading-8">
             Kehadiran, doa, dan ucapan dari Bapak/Ibu/Saudara/i merupakan
-            kebahagiaan yang sangat berarti bagi Aldi dan Uli.
+            kebahagiaan yang sangat berarti bagi Aldhy dan Ully.
           </p>
         </div>
 
         {/* FORM + MESSAGES */}
+
         <div className="mt-14 grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-12">
           {/* FORM */}
+
           <div>
             <div className="rounded-[32px] border border-neutral-200 bg-white/80 p-5 shadow-[0_20px_60px_rgba(0,0,0,0.12)] backdrop-blur-md sm:p-8">
               <div className="text-center">
@@ -275,12 +281,13 @@ export default function RSVP({ guestName = "" }) {
 
                 <p className="mx-auto mt-3 max-w-sm text-xs leading-6 text-[#525252] sm:text-sm">
                   Silakan isi konfirmasi kehadiran dan tinggalkan doa terbaik
-                  untuk Aldi & Uli.
+                  untuk Aldhy & Ully.
                 </p>
               </div>
 
               <form onSubmit={handleSubmit} className="mt-8 space-y-5">
                 {/* NAME */}
+
                 <div>
                   <label
                     htmlFor="nama"
@@ -301,6 +308,7 @@ export default function RSVP({ guestName = "" }) {
                 </div>
 
                 {/* ATTENDANCE */}
+
                 <div>
                   <label
                     htmlFor="kehadiran"
@@ -326,6 +334,7 @@ export default function RSVP({ guestName = "" }) {
                 </div>
 
                 {/* MESSAGE */}
+
                 <div>
                   <div className="mb-2 flex items-center justify-between gap-3">
                     <label
@@ -344,7 +353,7 @@ export default function RSVP({ guestName = "" }) {
                     id="ucapan"
                     value={ucapan}
                     onChange={(event) => setUcapan(event.target.value)}
-                    placeholder="Tuliskan doa dan ucapan terbaik untuk Aldi & Uli..."
+                    placeholder="Tuliskan doa dan ucapan terbaik untuk Aldhy & Ully..."
                     maxLength={500}
                     rows={5}
                     className="w-full resize-none rounded-2xl border border-neutral-200 bg-[#fafafa] px-4 py-4 text-sm leading-7 text-[#262626] outline-none transition placeholder:text-[#A3A3A3] focus:border-neutral-500 focus:ring-4 focus:ring-neutral-200/60"
@@ -352,6 +361,7 @@ export default function RSVP({ guestName = "" }) {
                 </div>
 
                 {/* ERROR */}
+
                 {error && (
                   <div className="rounded-2xl border border-neutral-300 bg-neutral-100 px-4 py-3 text-center text-xs leading-6 text-[#404040]">
                     {error}
@@ -359,6 +369,7 @@ export default function RSVP({ guestName = "" }) {
                 )}
 
                 {/* SUCCESS */}
+
                 {message && (
                   <div className="rounded-2xl border border-neutral-300 bg-neutral-100 px-4 py-3 text-center text-xs leading-6 text-[#262626]">
                     {message}
@@ -366,6 +377,7 @@ export default function RSVP({ guestName = "" }) {
                 )}
 
                 {/* BUTTON */}
+
                 <button
                   type="submit"
                   disabled={loading}
@@ -388,6 +400,7 @@ export default function RSVP({ guestName = "" }) {
           </div>
 
           {/* MESSAGE LIST */}
+
           <div>
             <div className="mb-6 text-center lg:text-left">
               <p className="text-[10px] font-semibold uppercase tracking-[0.32em] text-[#525252]">
@@ -399,12 +412,13 @@ export default function RSVP({ guestName = "" }) {
               </h3>
 
               <p className="mt-2 text-xs leading-6 text-[#525252] sm:text-sm">
-                Ucapan terbaru dari keluarga, sahabat, dan tamu untuk Aldi &
-                Uli.
+                Ucapan terbaru dari keluarga, sahabat, dan tamu untuk Aldhy &
+                Ully.
               </p>
             </div>
 
             {/* LOADING */}
+
             {loadingUcapan && (
               <div className="flex min-h-[220px] items-center justify-center rounded-[30px] border border-neutral-200 bg-white/60">
                 <div className="text-center">
@@ -418,6 +432,7 @@ export default function RSVP({ guestName = "" }) {
             )}
 
             {/* EMPTY */}
+
             {!loadingUcapan && daftarUcapan.length === 0 && (
               <div className="flex min-h-[220px] items-center justify-center rounded-[30px] border border-neutral-200 bg-white/60 px-6 text-center">
                 <div>
@@ -430,14 +445,15 @@ export default function RSVP({ guestName = "" }) {
                   </p>
 
                   <p className="mt-2 text-xs leading-6 text-[#737373]">
-                    Jadilah yang pertama memberikan doa terbaik untuk Aldi &
-                    Uli.
+                    Jadilah yang pertama memberikan doa terbaik untuk Aldhy &
+                    Ully.
                   </p>
                 </div>
               </div>
             )}
 
             {/* MESSAGES */}
+
             {!loadingUcapan && daftarUcapan.length > 0 && (
               <div className="max-h-[620px] space-y-4 overflow-y-auto pr-1 sm:pr-2">
                 {daftarUcapan.map((item) => (
@@ -488,6 +504,7 @@ export default function RSVP({ guestName = "" }) {
         </div>
 
         {/* CLOSING */}
+
         <div className="mx-auto mt-20 max-w-xl text-center">
           <span className="font-serif text-3xl text-neutral-500">♡</span>
 

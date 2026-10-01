@@ -4,10 +4,10 @@ import { useEffect, useState } from "react";
 
 // =====================================================
 // EVENT DATE
-// 03 October 2026 - 20:30 WIT
+// 03 October 2026 - 20:00 WIT
 // =====================================================
 
-const targetDate = new Date("2026-10-03T20:30:00+09:00");
+const targetDate = new Date("2026-10-03T20:00:00+09:00");
 
 const location =
   "Kelurahan Bastiong Karance, Kecamatan Ternate Selatan, Kota Ternate, Maluku Utara";
@@ -247,7 +247,7 @@ export default function Event() {
             </div>
 
             <p className="mt-5 text-sm font-semibold uppercase tracking-[0.25em] text-[#111111]">
-              20.30 WIT
+              20.00 WIT
             </p>
 
             <p className="mt-2 text-[9px] uppercase tracking-[0.2em] text-[#737373]">
@@ -270,7 +270,7 @@ export default function Event() {
               </p>
 
               <p className="mt-2 font-serif text-2xl text-[#111111]">
-                20.30 WIT
+                20.00 WIT
               </p>
 
               <p className="mt-2 text-xs text-[#525252]">Sampai selesai</p>
