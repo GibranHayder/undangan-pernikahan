@@ -1,3 +1,15 @@
+import { Great_Vibes } from "next/font/google";
+
+// =====================================================
+// GREAT VIBES
+// FONT KHUSUS NAMA PENGANTIN
+// =====================================================
+
+const greatVibes = Great_Vibes({
+  subsets: ["latin"],
+  weight: "400",
+});
+
 export default function Closing() {
   return (
     <section className="relative flex min-h-[85svh] items-center justify-center overflow-hidden bg-gradient-to-b from-[#f7f7f7] via-white to-[#ececec] px-5 py-24 sm:px-8 sm:py-28">
@@ -135,18 +147,31 @@ export default function Closing() {
 
         {/* ========================================= */}
         {/* ALDHY & ULLY */}
+        {/* GREAT VIBES */}
         {/* ========================================= */}
 
         <div className="mt-8">
-          <h3 className="font-serif text-[clamp(4rem,16vw,7rem)] font-normal leading-[0.82] tracking-[-0.04em] text-[#111111]">
+          <h3
+            className={`${greatVibes.className} text-[clamp(4.8rem,19vw,8rem)] font-normal leading-[0.82] text-[#111111]`}
+          >
             Aldhy
           </h3>
 
-          <p className="my-4 font-serif text-[clamp(1.8rem,7vw,3rem)] font-normal italic text-[#525252]">
-            &
-          </p>
+          <div className="my-3 flex items-center justify-center gap-4 sm:my-5">
+            <span className="h-px w-9 bg-neutral-300 sm:w-14" />
 
-          <h3 className="font-serif text-[clamp(4rem,16vw,7rem)] font-normal leading-[0.82] tracking-[-0.04em] text-[#111111]">
+            <span
+              className={`${greatVibes.className} text-[clamp(2.5rem,10vw,4.2rem)] leading-none text-[#525252]`}
+            >
+              &
+            </span>
+
+            <span className="h-px w-9 bg-neutral-300 sm:w-14" />
+          </div>
+
+          <h3
+            className={`${greatVibes.className} text-[clamp(4.8rem,19vw,8rem)] font-normal leading-[0.82] text-[#111111]`}
+          >
             Ully
           </h3>
         </div>

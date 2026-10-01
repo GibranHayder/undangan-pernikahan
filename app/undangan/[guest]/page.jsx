@@ -2,6 +2,7 @@
 
 import { useParams } from "next/navigation";
 import { useState } from "react";
+import { Great_Vibes } from "next/font/google";
 
 import Cover from "../../components/Cover";
 import FlowerPetals from "../../components/FlowerPetals";
@@ -19,6 +20,16 @@ import Gallery from "../../components/Gallery";
 import RSVP from "../../components/RSVP";
 import Closing from "../../components/Closing";
 import FinalCinematic from "../../components/FinalCinematic";
+
+// =====================================================
+// GREAT VIBES
+// FONT KHUSUS NAMA PENGANTIN
+// =====================================================
+
+const greatVibes = Great_Vibes({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 export default function InvitationPage() {
   const params = useParams();
@@ -293,7 +304,7 @@ export default function InvitationPage() {
 
                 {/* ================================================= */}
                 {/* ALDHY & ULLY */}
-                {/* MOBILE RESPONSIVE */}
+                {/* GREAT VIBES */}
                 {/* ================================================= */}
 
                 <div className="relative">
@@ -301,28 +312,25 @@ export default function InvitationPage() {
 
                   <div className="relative">
                     <h2
-                      className="text-[clamp(3.4rem,17vw,7.5rem)] font-normal leading-[0.82] tracking-[-0.04em] text-[#111111]"
-                      style={{
-                        fontFamily: "Georgia, 'Times New Roman', serif",
-                      }}
+                      className={`${greatVibes.className} text-[clamp(4.8rem,21vw,9rem)] font-normal leading-[0.82] text-[#111111]`}
                     >
                       Aldhy
                     </h2>
 
-                    <p
-                      className="my-3 text-[clamp(1.6rem,7vw,3.4rem)] font-normal italic text-[#525252] sm:my-5"
-                      style={{
-                        fontFamily: "Georgia, 'Times New Roman', serif",
-                      }}
-                    >
-                      &
-                    </p>
+                    <div className="my-2 flex items-center justify-center gap-4 sm:my-4">
+                      <span className="h-px w-9 bg-neutral-300 sm:w-14" />
+
+                      <span
+                        className={`${greatVibes.className} text-[clamp(2.5rem,10vw,4.2rem)] leading-none text-[#525252]`}
+                      >
+                        &
+                      </span>
+
+                      <span className="h-px w-9 bg-neutral-300 sm:w-14" />
+                    </div>
 
                     <h2
-                      className="text-[clamp(3.4rem,17vw,7.5rem)] font-normal leading-[0.82] tracking-[-0.04em] text-[#111111]"
-                      style={{
-                        fontFamily: "Georgia, 'Times New Roman', serif",
-                      }}
+                      className={`${greatVibes.className} text-[clamp(4.8rem,21vw,9rem)] font-normal leading-[0.82] text-[#111111]`}
                     >
                       Ully
                     </h2>

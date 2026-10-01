@@ -1,6 +1,17 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { Great_Vibes } from "next/font/google";
+
+// =====================================================
+// GREAT VIBES
+// FONT KHUSUS NAMA PENGANTIN
+// =====================================================
+
+const greatVibes = Great_Vibes({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 // =====================================================
 // WEDDING DATE
@@ -344,7 +355,13 @@ export default function SaveTheDate() {
           Save The Date
         </h2>
 
-        <p className="mt-4 font-serif text-lg italic text-neutral-300 sm:text-2xl">
+        {/* ================================================= */}
+        {/* NAMA PENGANTIN - GREAT VIBES */}
+        {/* ================================================= */}
+
+        <p
+          className={`${greatVibes.className} mt-5 text-[clamp(2.8rem,10vw,4.8rem)] font-normal leading-none text-neutral-200`}
+        >
           Aldhy & Ully
         </p>
 
@@ -478,12 +495,17 @@ export default function SaveTheDate() {
         </div>
       </div>
 
+      {/* ================================================= */}
+      {/* CSS */}
+      {/* ================================================= */}
+
       <style jsx>{`
         .date-number {
           font-family: serif;
           font-size: clamp(3.3rem, 15vw, 7.5rem);
           line-height: 1;
           font-weight: 400;
+
           text-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
         }
 
@@ -491,6 +513,7 @@ export default function SaveTheDate() {
           width: 5px;
           height: 5px;
           border-radius: 999px;
+
           background: white;
 
           box-shadow:
@@ -502,11 +525,13 @@ export default function SaveTheDate() {
 
         .save-scroll-line {
           transform-origin: top;
+
           animation: saveScroll 1.8s ease-in-out infinite;
         }
 
         .calendar-shine {
           transform: translateX(-180%) skewX(-12deg);
+
           animation: calendarShine 4.5s ease-in-out infinite;
         }
 

@@ -1,3 +1,12 @@
+"use client";
+
+import { Great_Vibes } from "next/font/google";
+
+const greatVibes = Great_Vibes({
+  subsets: ["latin"],
+  weight: "400",
+});
+
 export default function Couple() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-white via-[#f7f7f7] to-[#eeeeee] px-5 py-24 sm:px-8">
@@ -153,12 +162,16 @@ export default function Couple() {
             </p>
 
             {/* NAMA LENGKAP */}
-            <h3 className="mt-3 font-serif text-[clamp(3rem,11vw,5rem)] font-normal leading-[0.95] tracking-[-0.03em] text-[#111111]">
+            <h3
+              className={`${greatVibes.className} mt-3 text-[clamp(3.6rem,13vw,6rem)] font-normal leading-[0.95] text-[#111111]`}
+            >
               RifaldI Hamid
             </h3>
 
             {/* NAMA PANGGILAN */}
-            <p className="mt-4 font-serif text-[clamp(1.8rem,7vw,2.7rem)] font-normal leading-none tracking-[-0.02em] text-[#262626]">
+            <p
+              className={`${greatVibes.className} mt-3 text-[clamp(2.6rem,9vw,4rem)] font-normal leading-none text-[#262626]`}
+            >
               Aldhy
             </p>
 
@@ -221,12 +234,16 @@ export default function Couple() {
             </p>
 
             {/* NAMA LENGKAP */}
-            <h3 className="mt-3 font-serif text-[clamp(3rem,11vw,5rem)] font-normal leading-[0.95] tracking-[-0.03em] text-[#111111]">
+            <h3
+              className={`${greatVibes.className} mt-3 text-[clamp(3.6rem,13vw,6rem)] font-normal leading-[0.95] text-[#111111]`}
+            >
               Juliyana Ulama
             </h3>
 
             {/* NAMA PANGGILAN */}
-            <p className="mt-4 font-serif text-[clamp(1.8rem,7vw,2.7rem)] font-normal leading-none tracking-[-0.02em] text-[#262626]">
+            <p
+              className={`${greatVibes.className} mt-3 text-[clamp(2.6rem,9vw,4rem)] font-normal leading-none text-[#262626]`}
+            >
               Ully
             </p>
 

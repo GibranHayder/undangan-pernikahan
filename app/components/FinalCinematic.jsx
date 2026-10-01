@@ -1,6 +1,17 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { Great_Vibes } from "next/font/google";
+
+// =================================
+// GREAT VIBES
+// FONT KHUSUS NAMA PENGANTIN
+// =================================
+
+const greatVibes = Great_Vibes({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 const sparkles = [
   { left: "10%", top: "18%", delay: "0s" },
@@ -15,6 +26,7 @@ const sparkles = [
 
 export default function FinalCinematic() {
   const sectionRef = useRef(null);
+
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -290,20 +302,33 @@ export default function FinalCinematic() {
 
         {/* ================================= */}
         {/* ALDHY & ULLY */}
+        {/* GREAT VIBES */}
         {/* ================================= */}
 
         <div className="relative">
           <div className="absolute left-1/2 top-1/2 h-44 w-72 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#737373]/10 blur-[60px]" />
 
-          <h3 className="cinema-name relative font-serif text-[clamp(4rem,16vw,7rem)] font-normal leading-[0.82] tracking-[-0.04em]">
+          <h3
+            className={`${greatVibes.className} cinema-name relative text-[clamp(4.8rem,19vw,8.5rem)] font-normal leading-[0.82]`}
+          >
             Aldhy
           </h3>
 
-          <p className="relative my-5 font-serif text-[clamp(2rem,8vw,3.4rem)] font-normal italic text-[#8A8A8A]">
-            &
-          </p>
+          <div className="relative my-3 flex items-center justify-center gap-4 sm:my-5">
+            <span className="h-px w-10 bg-white/15 sm:w-14" />
 
-          <h3 className="cinema-name cinema-name-delay relative font-serif text-[clamp(4rem,16vw,7rem)] font-normal leading-[0.82] tracking-[-0.04em]">
+            <span
+              className={`${greatVibes.className} text-[clamp(2.6rem,10vw,4.4rem)] leading-none text-[#A3A3A3]`}
+            >
+              &
+            </span>
+
+            <span className="h-px w-10 bg-white/15 sm:w-14" />
+          </div>
+
+          <h3
+            className={`${greatVibes.className} cinema-name cinema-name-delay relative text-[clamp(4.8rem,19vw,8.5rem)] font-normal leading-[0.82]`}
+          >
             Ully
           </h3>
         </div>
@@ -334,6 +359,10 @@ export default function FinalCinematic() {
           visible ? "cinema-visible" : ""
         }`}
       />
+
+      {/* ================================= */}
+      {/* STYLE */}
+      {/* ================================= */}
 
       <style jsx>{`
         .cinema-content {
