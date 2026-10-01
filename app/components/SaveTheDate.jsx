@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 // 03 October 2026 - 20:00 WIT (UTC+9)
 // =====================================================
 
-const weddingDate = new Date("2026-10-03T20:30:00+09:00");
+const weddingDate = new Date("2026-10-03T20:00:00+09:00");
 
 export default function SaveTheDate() {
   const [timeLeft, setTimeLeft] = useState({
@@ -72,9 +72,13 @@ export default function SaveTheDate() {
 
     const calendarContent = [
       "BEGIN:VCALENDAR",
+
       "VERSION:2.0",
+
       "PRODID:-//Aldi & Uli Wedding//ID",
+
       "CALSCALE:GREGORIAN",
+
       "METHOD:PUBLISH",
 
       "BEGIN:VEVENT",
@@ -83,12 +87,12 @@ export default function SaveTheDate() {
 
       "DTSTAMP:20260915T000000Z",
 
-      // 03 October 2026 - 20:30 WIT
-      "DTSTART:20261003T113000Z",
+      // 03 October 2026 - 20:00 WIT
+      "DTSTART:20261003T110000Z",
 
       "SUMMARY:The Wedding of Aldi & Uli",
 
-      "DESCRIPTION:Undangan Pernikahan Aldi & Uli. Acara akan dilaksanakan pada Sabtu, 03 Oktober 2026 pukul 20.30 WIT.",
+      "DESCRIPTION:Undangan Pernikahan Aldi & Uli. Acara akan dilaksanakan pada Sabtu, 03 Oktober 2026 pukul 20.00 WIT.",
 
       "LOCATION:Kelurahan Bastiong Karance\\, Kecamatan Ternate Selatan\\, Kota Ternate\\, Maluku Utara",
 
@@ -142,7 +146,7 @@ export default function SaveTheDate() {
     const title = encodeURIComponent("The Wedding of Aldi & Uli");
 
     const details = encodeURIComponent(
-      "Undangan Pernikahan Aldi & Uli. Sabtu, 03 Oktober 2026 pukul 20.30 WIT ♡",
+      "Undangan Pernikahan Aldi & Uli. Sabtu, 03 Oktober 2026 pukul 20.00 WIT ♡",
     );
 
     const location = encodeURIComponent(
@@ -150,11 +154,11 @@ export default function SaveTheDate() {
     );
 
     /*
-      03 October 2026 - 20:30 WIT
-      = 03 October 2026 - 11:30 UTC
+      03 October 2026 - 20:00 WIT
+      = 03 October 2026 - 11:00 UTC
     */
 
-    const dates = "20261003T113000Z/20261003T113000Z";
+    const dates = "20261003T110000Z/20261003T110000Z";
 
     const url =
       `https://calendar.google.com/calendar/render?action=TEMPLATE` +
@@ -370,7 +374,7 @@ export default function SaveTheDate() {
           </p>
 
           <p className="mt-4 font-serif text-xl font-medium tracking-[0.15em] text-white sm:text-2xl">
-            20.30 WIT
+            20.00 WIT
           </p>
         </div>
 
@@ -416,7 +420,7 @@ export default function SaveTheDate() {
           </p>
 
           <p className="mt-4 text-[9px] uppercase tracking-[0.25em] text-white/45">
-            Sabtu · 03 Oktober 2026 · 20.30 WIT
+            Sabtu · 03 Oktober 2026 · 20.00 WIT
           </p>
         </div>
 

@@ -74,19 +74,22 @@ export default function InvitationPage() {
 
           {/* ================================================= */}
           {/* OPENING */}
+          {/* MOBILE + DESKTOP RESPONSIVE */}
           {/* ================================================= */}
 
           <section
             id="isi-undangan"
-            className="relative flex min-h-[100svh] scroll-mt-24 items-center justify-center overflow-hidden bg-gradient-to-b from-white via-[#f7f7f7] to-[#eeeeee] px-5 py-24 sm:px-8 sm:py-28"
+            className="relative flex min-h-[100svh] scroll-mt-20 items-center justify-center overflow-hidden bg-gradient-to-b from-white via-[#f7f7f7] to-[#eeeeee] px-4 py-16 sm:scroll-mt-24 sm:px-8 sm:py-28"
           >
+            {/* ================================================= */}
             {/* GLOW */}
+            {/* ================================================= */}
 
-            <div className="pointer-events-none absolute -left-28 top-10 h-80 w-80 rounded-full bg-neutral-300/30 blur-[110px]" />
+            <div className="pointer-events-none absolute -left-24 top-10 h-56 w-56 rounded-full bg-neutral-300/25 blur-[90px] sm:-left-28 sm:h-80 sm:w-80 sm:bg-neutral-300/30 sm:blur-[110px]" />
 
-            <div className="pointer-events-none absolute -right-28 bottom-10 h-96 w-96 rounded-full bg-neutral-400/20 blur-[120px]" />
+            <div className="pointer-events-none absolute -right-24 bottom-10 h-64 w-64 rounded-full bg-neutral-400/15 blur-[90px] sm:-right-28 sm:h-96 sm:w-96 sm:bg-neutral-400/20 sm:blur-[120px]" />
 
-            <div className="pointer-events-none absolute left-1/2 top-1/2 h-[420px] w-[420px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-neutral-200/25 blur-[130px]" />
+            <div className="pointer-events-none absolute left-1/2 top-1/2 h-[300px] w-[300px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-neutral-200/20 blur-[100px] sm:h-[420px] sm:w-[420px] sm:bg-neutral-200/25 sm:blur-[130px]" />
 
             {/* ================================================= */}
             {/* LEFT FLORAL */}
@@ -94,7 +97,7 @@ export default function InvitationPage() {
 
             <svg
               viewBox="0 0 300 500"
-              className="pointer-events-none absolute -left-24 top-0 w-[210px] opacity-25 sm:w-[280px] lg:w-[340px]"
+              className="pointer-events-none absolute -left-20 top-0 w-[150px] opacity-[0.18] sm:-left-24 sm:w-[280px] sm:opacity-25 lg:w-[340px]"
               fill="none"
               aria-hidden="true"
             >
@@ -173,7 +176,7 @@ export default function InvitationPage() {
 
             <svg
               viewBox="0 0 300 500"
-              className="pointer-events-none absolute -bottom-24 -right-24 w-[220px] rotate-180 opacity-25 sm:w-[290px] lg:w-[350px]"
+              className="pointer-events-none absolute -bottom-16 -right-20 w-[155px] rotate-180 opacity-[0.18] sm:-bottom-24 sm:-right-24 sm:w-[290px] sm:opacity-25 lg:w-[350px]"
               fill="none"
               aria-hidden="true"
             >
@@ -223,11 +226,13 @@ export default function InvitationPage() {
               />
             </svg>
 
+            {/* ================================================= */}
             {/* RINGS */}
+            {/* ================================================= */}
 
-            <div className="pointer-events-none absolute left-1/2 top-1/2 h-[320px] w-[320px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-neutral-200/70 sm:h-[460px] sm:w-[460px]" />
+            <div className="pointer-events-none absolute left-1/2 top-1/2 h-[250px] w-[250px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-neutral-200/60 sm:h-[460px] sm:w-[460px] sm:border-neutral-200/70" />
 
-            <div className="pointer-events-none absolute left-1/2 top-1/2 h-[280px] w-[280px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-neutral-300/40 sm:h-[410px] sm:w-[410px]" />
+            <div className="pointer-events-none absolute left-1/2 top-1/2 h-[215px] w-[215px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-neutral-300/30 sm:h-[410px] sm:w-[410px] sm:border-neutral-300/40" />
 
             {/* ================================================= */}
             {/* CONTENT */}
@@ -236,53 +241,67 @@ export default function InvitationPage() {
             <ScrollReveal
               direction="up"
               duration={1100}
-              className="relative z-10 mx-auto w-full max-w-2xl"
+              className="relative z-10 mx-auto w-full max-w-[92vw] sm:max-w-2xl"
             >
               <div className="text-center">
-                <p className="text-[10px] font-medium uppercase tracking-[0.45em] text-[#525252] sm:text-xs">
+                {/* OUR SPECIAL DAY */}
+
+                <p className="text-[8px] font-medium uppercase tracking-[0.32em] text-[#525252] sm:text-xs sm:tracking-[0.45em]">
                   Our Special Day
                 </p>
 
-                <div className="mt-5 flex items-center justify-center gap-3">
-                  <span className="h-px w-8 bg-neutral-300 sm:w-14" />
+                {/* DECORATION */}
 
-                  <span className="font-serif text-lg text-neutral-600">♡</span>
+                <div className="mt-4 flex items-center justify-center gap-3 sm:mt-5">
+                  <span className="h-px w-7 bg-neutral-300 sm:w-14" />
 
-                  <span className="h-px w-8 bg-neutral-300 sm:w-14" />
+                  <span className="font-serif text-base text-neutral-600 sm:text-lg">
+                    ♡
+                  </span>
+
+                  <span className="h-px w-7 bg-neutral-300 sm:w-14" />
                 </div>
 
-                <h1 className="mt-7 font-serif text-[clamp(2.7rem,10vw,5rem)] leading-tight text-[#111111]">
+                {/* SALAM */}
+
+                <h1 className="mt-6 font-serif text-[clamp(2rem,9vw,5rem)] leading-tight text-[#111111] sm:mt-7">
                   Assalamu&apos;alaikum
                 </h1>
 
-                <p className="mt-2 font-serif text-[clamp(1.2rem,5vw,2rem)] italic text-[#525252]">
+                <p className="mt-2 font-serif text-[clamp(1rem,4.5vw,2rem)] italic text-[#525252]">
                   Warahmatullahi Wabarakatuh
                 </p>
 
-                <p className="mx-auto mt-8 max-w-xl text-sm leading-7 text-[#404040] sm:text-base sm:leading-8">
+                {/* DESCRIPTION */}
+
+                <p className="mx-auto mt-6 max-w-xl px-1 text-[13px] leading-6 text-[#404040] sm:mt-8 sm:px-0 sm:text-base sm:leading-8">
                   Dengan memohon rahmat dan ridho Allah SWT, kami bermaksud
                   menyelenggarakan acara pernikahan kami.
                 </p>
 
-                <div className="mx-auto my-10 flex items-center justify-center gap-4">
-                  <span className="h-px w-10 bg-neutral-300" />
+                {/* DIVIDER */}
 
-                  <span className="text-lg text-neutral-500">❀</span>
+                <div className="mx-auto my-7 flex items-center justify-center gap-3 sm:my-10 sm:gap-4">
+                  <span className="h-px w-8 bg-neutral-300 sm:w-10" />
 
-                  <span className="h-px w-10 bg-neutral-300" />
+                  <span className="text-base text-neutral-500 sm:text-lg">
+                    ❀
+                  </span>
+
+                  <span className="h-px w-8 bg-neutral-300 sm:w-10" />
                 </div>
 
                 {/* ================================================= */}
                 {/* ALDHY & ULLY */}
-                {/* FONT SERIF KLASIK SEPERTI GAMBAR */}
+                {/* MOBILE RESPONSIVE */}
                 {/* ================================================= */}
 
                 <div className="relative">
-                  <div className="pointer-events-none absolute left-1/2 top-1/2 h-44 w-44 -translate-x-1/2 -translate-y-1/2 rounded-full bg-neutral-300/20 blur-[60px]" />
+                  <div className="pointer-events-none absolute left-1/2 top-1/2 h-36 w-36 -translate-x-1/2 -translate-y-1/2 rounded-full bg-neutral-300/20 blur-[50px] sm:h-44 sm:w-44 sm:blur-[60px]" />
 
                   <div className="relative">
                     <h2
-                      className="text-[clamp(4.4rem,18vw,7.5rem)] font-normal leading-[0.82] tracking-[-0.04em] text-[#111111]"
+                      className="text-[clamp(3.4rem,17vw,7.5rem)] font-normal leading-[0.82] tracking-[-0.04em] text-[#111111]"
                       style={{
                         fontFamily: "Georgia, 'Times New Roman', serif",
                       }}
@@ -291,7 +310,7 @@ export default function InvitationPage() {
                     </h2>
 
                     <p
-                      className="my-5 text-[clamp(2rem,8vw,3.4rem)] font-normal italic text-[#525252]"
+                      className="my-3 text-[clamp(1.6rem,7vw,3.4rem)] font-normal italic text-[#525252] sm:my-5"
                       style={{
                         fontFamily: "Georgia, 'Times New Roman', serif",
                       }}
@@ -300,7 +319,7 @@ export default function InvitationPage() {
                     </p>
 
                     <h2
-                      className="text-[clamp(4.4rem,18vw,7.5rem)] font-normal leading-[0.82] tracking-[-0.04em] text-[#111111]"
+                      className="text-[clamp(3.4rem,17vw,7.5rem)] font-normal leading-[0.82] tracking-[-0.04em] text-[#111111]"
                       style={{
                         fontFamily: "Georgia, 'Times New Roman', serif",
                       }}
@@ -312,17 +331,19 @@ export default function InvitationPage() {
 
                 {/* DATE */}
 
-                <div className="mt-10 flex items-center justify-center gap-3">
-                  <span className="h-px w-7 bg-neutral-300 sm:w-12" />
+                <div className="mt-8 flex items-center justify-center gap-2 sm:mt-10 sm:gap-3">
+                  <span className="h-px w-6 bg-neutral-300 sm:w-12" />
 
-                  <p className="text-[10px] font-semibold uppercase tracking-[0.25em] text-[#525252] sm:text-xs">
+                  <p className="whitespace-nowrap text-[8px] font-semibold uppercase tracking-[0.18em] text-[#525252] sm:text-xs sm:tracking-[0.25em]">
                     Sabtu · 03 Oktober 2026
                   </p>
 
-                  <span className="h-px w-7 bg-neutral-300 sm:w-12" />
+                  <span className="h-px w-6 bg-neutral-300 sm:w-12" />
                 </div>
 
-                <p className="mx-auto mt-8 max-w-lg text-sm leading-7 text-[#404040] sm:text-base sm:leading-8">
+                {/* DESCRIPTION */}
+
+                <p className="mx-auto mt-6 max-w-lg px-1 text-[13px] leading-6 text-[#404040] sm:mt-8 sm:px-0 sm:text-base sm:leading-8">
                   Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila
                   Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa dan
                   restu kepada kami.
@@ -330,16 +351,16 @@ export default function InvitationPage() {
 
                 {/* SCROLL */}
 
-                <div className="mt-10 flex flex-col items-center">
-                  <span className="font-serif text-3xl text-neutral-500">
+                <div className="mt-7 flex flex-col items-center sm:mt-10">
+                  <span className="font-serif text-2xl text-neutral-500 sm:text-3xl">
                     ♡
                   </span>
 
-                  <p className="mt-3 text-[8px] uppercase tracking-[0.32em] text-[#737373]">
+                  <p className="mt-2 text-[7px] uppercase tracking-[0.28em] text-[#737373] sm:mt-3 sm:text-[8px] sm:tracking-[0.32em]">
                     Scroll
                   </p>
 
-                  <div className="mt-3 h-10 w-px overflow-hidden bg-neutral-200">
+                  <div className="mt-2 h-8 w-px overflow-hidden bg-neutral-200 sm:mt-3 sm:h-10">
                     <div className="h-full w-full bg-[#525252]" />
                   </div>
                 </div>
